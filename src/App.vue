@@ -6,7 +6,7 @@ const drawer = ref(false);
 </script>
 
 <template>
-  <v-app class="app-shell">
+  <v-app class="app-shell" theme="dark">
     <!-- Top bar -->
     <v-app-bar color="orange" dark>
       <v-app-bar-nav-icon @click="drawer = !drawer" />
