@@ -11,13 +11,9 @@
 </template>
 
 <script setup lang="ts">
-// Props
-defineProps({
-  images: {
-    type: Array,
-    required: true,
-  },
-});
+defineProps<{
+  images: string[];
+}>();
 </script>
 
 <style scoped>
