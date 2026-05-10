@@ -49,6 +49,7 @@
           variant="tonal"
           :loading="loading"
           @click="emit('loadCurrentLocationWeather')"
+          class="d-none d-md-inline-flex"
         >
           Use My Location
         </v-btn>
@@ -254,5 +255,24 @@ function formatDateTime(isoTime: string): string {
   font-weight: 700;
   margin-bottom: 8px;
   color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .weather-title {
+    font-size: 0.9rem;
+  }
+
+  .weather-condition {
+    font-size: 0.95rem;
+  }
+
+  .weather-temp {
+    font-size: 1.6rem;
+  }
+
+  .weather-search-row {
+    grid-template-columns: minmax(150px, 1fr) auto;
+    gap: 8px;
+  }
 }
 </style>
