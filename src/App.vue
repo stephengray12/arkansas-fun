@@ -16,7 +16,7 @@ const drawer = ref(false);
         alt="Logo"
         height="60"
         width="60"
-        class="mr-0"
+        class="mr-0 d-none d-md-inline-flex"
       />
 
       <v-toolbar-title>Arkansas' Fun</v-toolbar-title>

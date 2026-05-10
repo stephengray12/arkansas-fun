@@ -99,6 +99,12 @@
   }
 }
 
+@media (max-width: 960px) {
+  .footer-left {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1024px) {
   .app-footer {
     padding-top: 8px;
