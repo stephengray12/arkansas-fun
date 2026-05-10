@@ -1,7 +1,7 @@
 <template>
   <v-footer class="app-footer px-4 py-2" color="orange">
     <div class="footer-row w-100">
-      <div class="footer-left">
+      <div class="footer-left d-none d-md-flex">
         <img
           src="../assets/images/company.png"
           alt="Arkansas' Fun logo"

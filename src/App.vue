@@ -21,17 +21,31 @@ const drawer = ref(false);
 
       <v-toolbar-title>Arkansas' Fun</v-toolbar-title>
 
-      <!-- Quick links in top bar -->
-      <v-spacer />
-      <v-btn to="/" variant="text">Home</v-btn>
-      <v-btn to="/about" variant="text" prepend-icon="mdi-compass-outline">
+      <!-- Quick links in top bar - hidden on mobile -->
+      <v-spacer class="d-none d-md-flex" />
+      <v-btn to="/" variant="text" class="d-none d-md-inline-flex">Home</v-btn>
+      <v-btn
+        to="/about"
+        variant="text"
+        prepend-icon="mdi-compass-outline"
+        class="d-none d-md-inline-flex"
+      >
         About
       </v-btn>
-      <v-btn to="/contact" variant="text" prepend-icon="mdi-email-outline">
+      <v-btn
+        to="/contact"
+        variant="text"
+        prepend-icon="mdi-email-outline"
+        class="d-none d-md-inline-flex"
+      >
         Contact
       </v-btn>
-      <v-btn to="/license" variant="text">License</v-btn>
-      <v-btn to="/info" variant="text">Info</v-btn>
+      <v-btn to="/license" variant="text" class="d-none d-md-inline-flex"
+        >License</v-btn
+      >
+      <v-btn to="/info" variant="text" class="d-none d-md-inline-flex"
+        >Info</v-btn
+      >
     </v-app-bar>
 
     <!-- Side drawer -->
